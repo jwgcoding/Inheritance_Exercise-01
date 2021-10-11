@@ -4,7 +4,7 @@ namespace Inheritance_Exercise_01_Answers
 {
     class Program
     {
-        #region// TODO: Demonstrate inheritance using a class
+        #region DO THESE FIRST!!!
 
         // TODO: Create a base class called Character
         // TODO: Give the Character class properties (be creative)
@@ -23,6 +23,8 @@ namespace Inheritance_Exercise_01_Answers
 
         static void Main(string[] args)
         {
+            #region DO THESE SECOND!!!
+
             // TODO: Create an instance of the Character class
             // TODO: Create an instance of your MainCharacter class
             // TODO: Create an instance of your EnemyCharacter class
@@ -37,6 +39,8 @@ namespace Inheritance_Exercise_01_Answers
 
             // Thought Experiment: Why can't you call the methods for the charcter class?
             // Answer here: ?
+
+            #endregion
         }
         public static void AddSpaces(int numberOfSpaces)
         {
