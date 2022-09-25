@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection.PortableExecutable;
+using Inheritance_Exercise_01;
 
 namespace Inheritance_Exercise_01_Answers
 {
@@ -6,18 +8,10 @@ namespace Inheritance_Exercise_01_Answers
     {
         #region DO THESE FIRST!!!
 
-        // TODO: Create a base class called Character
-        // TODO: Give the Character class properties (be creative)
-        // TODO: Give the Character class basic attack and defend methods
-        // TODO: Make all the members of the base class Protected
 
-        // TODO: Create a child class called MainCharacter that inherits from the base class
-        // TODO: Give the MainCharacter class methods and properties (be creative)
-        // TODO: Make all members public
+       
 
-        // TODO: Create another child class called EnemyCharacter that inherits from the base class
-        // TODO: Give the EnemyCharacter class methods and properties (be creative)
-        // TODO: Make all members public
+     
 
         #endregion
 
@@ -29,16 +23,27 @@ namespace Inheritance_Exercise_01_Answers
             // TODO: Create an instance of your MainCharacter class
             // TODO: Create an instance of your EnemyCharacter class
 
-
+            var character = new Character();
+            var mainCharacter = new MainCharacter();
+            var enemy = new EnemyCharacter();
             // TODO: Call all the methods for the main character and enemy character
             // TODO: Seperate them with the AddSpaces(int numberOfSpaces) function
+            mainCharacter.Attack();
+            mainCharacter.Defense();
+            AddSpaces(1);
+            enemy.Attack();
+            enemy.Defense();
+
+
+           
 
 
             // TODO: Try calling the methods for the character class
-
+            character.Attack1();
+            character.Defense1();
 
             // Thought Experiment: Why can't you call the methods for the charcter class?
-            // Answer here: ?
+            // Answer here: Character class has protected fields which cant be called outside the base class
 
             #endregion
         }
